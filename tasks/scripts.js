@@ -1,6 +1,6 @@
 import gulp from 'gulp';
 import gulpif from 'gulp-if';
-import concat from 'gulp-concot';
+import concat from 'gulp-concat';
 import webpack from 'webpack';
 import gulpWebpack from 'webpack-stream';
 import named from 'vinyl-named';
@@ -12,7 +12,7 @@ import {log, colors} from 'gulp-util';
 import args from './util/args';
 
 
-gulp.task('scripts', ()=>{
+gulp.task('scripts', () => {
 	return gulp.src(['app/js/index.js'])
 		.pipe(plumber({
 			errorHandle: function() {
@@ -22,13 +22,13 @@ gulp.task('scripts', ()=>{
 		.pipe(named())
 		.pipe(gulpWebpack({
 			module: {
-				loaders：[{
+				loaders: [{
 						test: /\.js$/,
 						loader: 'babel'
 				}]
 			}
-		}), null, (err, status)=>{
-				log(`Finished '${colors.cyan'sctipts'}'`, status.toString({
+		}), null, (err, status) => {
+				log(`Finished '${colors.cyan('sctipts')}'`, status.toString({
 					chunks: false
 				}));
 		})
@@ -37,10 +37,10 @@ gulp.task('scripts', ()=>{
 			basename: 'cp',
 			extname: '.min.js'
 		}))
-		.pine(uglify({
+		.pipe(uglify({
 			compress: { properties: false},
 			output: {'quote_keys': true}
 		}))
 		.pipe(gulp.dest('server/public/js'))
-		.pipe(gulpif.watch(args.watch, livereload()))
+		.pipe(gulpif(args.watch, livereload()))
 })

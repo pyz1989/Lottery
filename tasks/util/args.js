@@ -25,7 +25,7 @@ const args = yargs
 	})
 
 	.option('port', {
-		boolean: string,
+		string: true,
 		default: 8080,
 		describe: 'server port'
 	})
