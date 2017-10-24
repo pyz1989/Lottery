@@ -8,13 +8,22 @@ Lottery
 - tasks: 用于放置构建工具代码（用于整个代码编译、定时刷新）
 
 
-### 安装淘宝镜像
+## 淘宝镜像
 > 淘宝 NPM 镜像：这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。
 
+### 安装
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
-然后，就可以使用cnpm替代npm了。
+### 使用
+- 1. 验证是否成功安装
+```
+cnpm -v
+```
+- 2. 成功安装后，就可以使用 **cnpm** 替代npm
+```
+cnpm install [name]
+```
 
 # 1. 基础架构
 - 业务逻辑
