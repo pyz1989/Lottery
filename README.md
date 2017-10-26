@@ -43,19 +43,19 @@ cnpm install [name]
 
 
 # 2. 任务自动化（gulp）
-- 1. 什么是任务自动化
-- 2. 什么是gulp
-- 3. gulp的作用
-- 4. 了解如何使用gulp完成任务自动化
+- 1.什么是任务自动化
+- 2.什么是gulp
+- 3.gulp的作用
+- 4.了解如何使用gulp完成任务自动化
 
 
 # 3. 编译工具（babel、webpack）
-- 1. 什么是babel、webpack
-- 2. babel的核心用法
-- 3. 了解webpack和webpack-stream的作用
+- 1.什么是babel、webpack
+- 2.babel的核心用法
+- 3.了解webpack和webpack-stream的作用
 # 4. 代码实现
-- 1. 创建一个ES6前端工程
-- 2. 完成目录结构、自动构建、服务器搭建
+- 1.创建一个ES6前端工程
+- 2.完成目录结构、自动构建、服务器搭建
 
 
 
