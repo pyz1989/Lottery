@@ -1,6 +1,6 @@
 Lottery
 --------
-> 基于 ES6 的彩票系统
+> 基于 [ES6](http://es6.ruanyifeng.com/) 的彩票系统
 
 **目录说明**
 - app: 用于放置前端代码（css、js、模板等）
